@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>flow</title>
+
+		<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/1.44.10/resources/sap-ui-cachebuster/sap-ui-core.js"
+			data-sap-ui-libs="sap.m,sap.ui.vbm,sap.ui.vk"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"ppmflow": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				var app = new sap.m.App({initialPage:"ppmflowContainer"});
+                var page = sap.ui.view({
+					id: "ppmflowContainer",
+					viewName: "ppmflow.view.flow",
+					type: sap.ui.core.mvc.ViewType.XML
+				})
+                app.addPage(page);
+                app.placeAt("content");
+			});
+			
+	            var oModel = new sap.ui.model.json.JSONModel("model/simpleTest.json");
+		        oModel.attachRequestCompleted(function(oEvent){  
+					var oModelUploaded= oEvent.getSource();  
+					sap.ui.getCore().setModel(oModelUploaded);
+				})
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>

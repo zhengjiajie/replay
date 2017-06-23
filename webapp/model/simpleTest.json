@@ -1,0 +1,287 @@
+{
+	"editmode": true,
+	"tasks": [{
+		"id": "T1",
+		"name": "First Task nweidnwuidn uw diwndw i",
+		"description": "My first task",
+		"status": "completed",
+		"actions": [{
+			"id": "action1",
+			"name": "action 1"
+		}, {
+			"id": "action2",
+			"name": "action 2"
+		}]
+
+	}, {
+		"id": "T2",
+		"name": "Second & Task",
+		"description": "My second task",
+		"status": "completed",
+		"actions": [{
+			"id": "action1",
+			"name": "action 1"
+		}, {
+			"id": "action2",
+			"name": "action 2"
+		}]
+
+	}, {
+		"id": "T3",
+		"name": "Third Task",
+		"description": "My third task",
+		"status": "completed",
+		"actions": [{
+			"id": "action1",
+			"name": "action 1"
+		}, {
+			"id": "action2",
+			"name": "action 2"
+		}],
+		"isMainTask": "X",
+		"subtasks": [{
+			"id": "T31",
+			"name": "Sub Task 1",
+			"description": "My third task",
+			"status": "completed",
+			"actions": [{
+				"id": "action1",
+				"name": "action 1"
+			}, {
+				"id": "action2",
+				"name": "action 2"
+			}]
+		}, {
+			"id": "T32",
+			"name": "Sub Task 2",
+			"description": "My third task",
+			"status": "completed",
+			"actions": [{
+				"id": "action1",
+				"name": "action 1"
+			}, {
+				"id": "action2",
+				"name": "action 2"
+			}]
+		}, {
+			"id": "T33",
+			"name": "Sub Task 2",
+			"description": "My third task",
+			"status": "completed",
+			"actions": [{
+				"id": "action1",
+				"name": "action 1"
+			}, {
+				"id": "action2",
+				"name": "action 2"
+			}]
+		}],
+		"innerRelationships": [{
+			"from": "T31",
+			"to": "T32"
+		}, {
+			"from": "T31",
+			"to": "T33"
+		}]
+	}],
+	"milestones": [{
+		"id": "T4",
+		"name": "G0",
+		"description": "My gate",
+		"status": "completed",
+		"actions": [{
+			"id": "action1",
+			"name": "action 1"
+		}, {
+			"id": "action2",
+			"name": "action 2"
+		}]
+
+	}],
+	"relationships": [{
+		"from": "T1",
+		"to": "T2"
+	}, {
+		"from": "T1",
+		"to": "T3"
+	}, {
+		"from": "T3",
+		"to": "T4"
+	}],
+	"layout": [{
+		"nodes": [{
+			"id": "T1",
+			"name": "First Task nweidnwuidn uw diwndw i",
+			"x": 75,
+			"y": 75,
+			"subnodeslayout": [{
+				"nodes": [{
+					"id": "",
+					"name": "",
+					"x": "",
+					"y": ""
+				}],
+				"edges": [{
+					"id": "",
+					"from": "",
+					"to": "",
+					"points": [{
+						"x": "",
+						"y": ""
+					}]
+				}]
+			}]
+		}, {
+			"id": "T2",
+			"name": "Second Task",
+			"x": 339,
+			"y": 38,
+			"subnodeslayout": [{
+				"nodes": [{
+					"id": "",
+					"name": "",
+					"x": "",
+					"y": ""
+				}],
+				"edges": [{
+					"id": "",
+					"from": "",
+					"to": "",
+					"points": [{
+						"x": "",
+						"y": ""
+					}]
+				}]
+			}]
+		}, {
+			"id": "T4",
+			"name": "G0",
+			"x": 626,
+			"y": 289,
+			"subnodeslayout": [{
+				"nodes": [{
+					"id": "",
+					"name": "",
+					"x": "",
+					"y": ""
+				}],
+				"edges": [{
+					"id": "",
+					"from": "",
+					"to": "",
+					"points": [{
+						"x": "",
+						"y": ""
+					}]
+				}]
+			}]
+		}, {
+			"id": "T3",
+			"name": "Third Task",
+			"x": 295,
+			"y": 262,
+			"subnodeslayout": [{
+				"nodes": [{
+					"id": "T31",
+					"name": "Sub Task 1",
+					"x": 75,
+					"y": 75
+				}, {
+					"id": "T32",
+					"name": "Sub Task 2",
+					"x": 275,
+					"y": 25
+				}, {
+					"id": "T33",
+					"name": "Sub Task 2",
+					"x": 269.2565155029297,
+					"y": 88.24165344238281
+				}],
+				"edges": [{
+					"id": "T31-T32",
+					"from": "T31",
+					"to": "T32",
+					"points": [{
+						"x": 125,
+						"y": 50
+					}, {
+						"x": 116,
+						"y": 9.703125
+					}, {
+						"x": 175,
+						"y": 25
+					}, {
+						"x": 200,
+						"y": 25
+					}]
+				}, {
+					"id": "T31-T33",
+					"from": "T31",
+					"to": "T33",
+					"points": [{
+						"x": 125,
+						"y": 100
+					}, {
+						"x": 146,
+						"y": 136.703125
+					}, {
+						"x": 205.66552734375,
+						"y": 134.21255493164062
+					}, {
+						"x": 205.6717173419893,
+						"y": 113.24165344238281
+					}]
+				}]
+			}]
+		}],
+		"edges": [{
+			"id": "T1-T2",
+			"from": "T1",
+			"to": "T2",
+			"points": [{
+				"x": 125,
+				"y": 50
+			}, {
+				"x": 175,
+				"y": 25
+			}, {
+				"x": 264,
+				"y": 32.05487804878049
+			}]
+		}, {
+			"id": "T1-T3",
+			"from": "T1",
+			"to": "T3",
+			"points": [{
+				"x": 125,
+				"y": 100
+			}, {
+				"x": 175,
+				"y": 125
+			}, {
+				"x": 94,
+				"y": 266
+			}, {
+				"x": 220,
+				"y": 263.4925373134328
+			}]
+		}, {
+			"id": "T3-T4",
+			"from": "T3",
+			"to": "T4",
+			"points": [{
+				"x": 309.5985401459854,
+				"y": 237
+			}, {
+				"x": 375,
+				"y": 125
+			}, {
+				"x": 568.0409545898438,
+				"y": 140.75466918945312
+			}, {
+				"x": 602.9582402858418,
+				"y": 274.1181330951318
+			}]
+		}]
+	}]
+}

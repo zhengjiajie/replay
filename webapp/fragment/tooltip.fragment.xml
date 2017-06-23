@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Popover showHeader="false" placement="Top" offsetX="{/positionX}" offsetY="{/positionY}">
+		<VBox justifyContent="Center" alignItems="Center">
+			<Text text="{/text}" textAlign="Center"/>
+		</VBox>
+	</Popover>
+</core:FragmentDefinition>

@@ -1,0 +1,81 @@
+.ppmFlowChart .flowTask .flowTaskMenu {
+    display: none;
+}
+
+rect[ppmTaskHighlighted="true"]{
+	stroke: red;
+}
+
+.ppmFlowNoDisplay{
+    display: none;
+}
+
+.ppmFlowChart .flowTask:hover .flowTaskMenu {
+    display: flex;
+}
+
+.ppmFlowCommand {
+	/*font-size: 0.75rem;*/
+	height: 2rem;
+}
+
+.ppmFlowChart .edgePath path {
+    stroke: #333;
+    stroke-width: 1.5px;
+    cursor: pointer;
+}
+
+.ppmFlowChart .node {
+    cursor: pointer;
+}
+
+.ppmFlowChart .flowCanvas {
+    cursor: move;
+}
+
+.flowCanvas{
+	overflow: hidden;
+}
+
+.ppmFlowTaskArea{
+	fill: #FFFFFF;
+	stroke: #000000
+}
+
+.ppmFlowChart div{
+    width: 100%;
+    height: 100%;
+}
+
+.ppmFlowWidth {
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.edgeAnchor{
+	/*pointer-events: none;*/
+	fill: none;
+    stroke: black;
+    stroke-width: 2px;
+    cursor: pointer;
+}
+
+.startAnchor{
+	/*pointer-events: none;*/
+	fill: transparent;
+    stroke: black;
+    stroke-width: 2px;
+    cursor: pointer;
+}
+
+.endAnchor{
+	/*pointer-events: none;*/
+	fill: transparent;
+    stroke: black;
+    stroke-width: 2px;
+    cursor: pointer;
+}
+
+.taskName{
+	font-size: 13px;
+}
