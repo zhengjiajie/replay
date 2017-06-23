@@ -1,0 +1,22 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ppmflow.controller.projectFlow"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:flow="ppmflow.control">
+	<FlexBox width="100%" direction="Column" alignItems="Start" height="100%">
+		<items>
+
+			<l:HorizontalLayout id="__layout0">
+				<flow:FlowChart data="{/}" isProjectFlow="true" nodeDblClick="nodeDblClick" contextMenu="openContextMenu" showTooltip="showTooltip" hideTooltip="hideTooltip" id="__flowChart0"/>
+				<l:layoutData>
+					<FlexItemData id="__data1" growFactor="1" styleClass="ppmFlowContainer ppmFlowWidth"/>
+				</l:layoutData>
+			</l:HorizontalLayout>
+			<OverflowToolbar id="__toolbar1">
+				<ToggleButton width="auto" id="__button1" icon="sap-icon://legend" press="toggleLegend"/>
+				<ToggleButton width="auto" id="zoomin" text="Zoom in" press="zoomin"/>
+				<ToggleButton width="auto" id="zoomout" text="Zoom out" press="zoomout"/>
+				<layoutData>
+					<FlexItemData id="__data0" growFactor="0" shrinkFactor="0" styleClass="ppmFlowWidth"/>
+				</layoutData>
+			</OverflowToolbar>
+		</items>
+	</FlexBox>
+</mvc:View>

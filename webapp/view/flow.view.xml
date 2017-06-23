@@ -1,0 +1,20 @@
+<mvc:View height="100%" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:vbm="sap.ui.vbm"
+	xmlns:l="sap.ui.layout" xmlns:viz="sap.viz.ui5.controls" xmlns:vk="sap.ui.vk" xmlns:flow="ppmflow.control"
+	controllerName="ppmflow.controller.flow">
+	<FlexBox width="100%" direction="Column" alignItems="Start" height="100%">
+		<items>
+			<OverflowToolbar id="__toolbar1">
+				<Button id="__button0" icon="sap-icon://save" width="auto" press="saveLayout" enabled="{/editmode}"></Button>
+				<layoutData>
+					<FlexItemData id="__data1" growFactor="0" shrinkFactor="0" styleClass="ppmFlowWidth"/>
+				</layoutData>
+			</OverflowToolbar>
+			<l:HorizontalLayout id="__layout0">
+				<flow:FlowChart data="{/}" id="__flowChart0"/>
+				<l:layoutData>
+					<FlexItemData id="__data2" growFactor="1" styleClass="ppmFlowContainer ppmFlowWidth"/>
+				</l:layoutData>
+			</l:HorizontalLayout>
+		</items>
+	</FlexBox>
+</mvc:View>

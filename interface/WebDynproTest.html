@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html style="width: 100%; height: 100%;">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>flow</title>
+
+		<script id="sap_ui_bootstrap"
+			src="https://sapui5.hana.ondemand.com/1.44.10/resources/sap-ui-cachebuster/sap-ui-core.js"
+			data-sap-ui-id="flow_bootstrap"
+			data-sap-ui-libs="sap.m,sap.ui.vbm,sap.ui.vk,sap.ui.layout"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+                data-sap-ui-xx-bindingSyntax="complex"
+			data-sap-ui-resourceroots='{"ppmflow": "../webapp/"}'>
+		</script>
+		
+		<!--<script src="/path/to/svg4everybody.js"></script>-->
+		
+		<script id="ppmFlowInterface" src="WebDynpro.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="../webapp/css/style.css">
+
+	</head> 
+
+	<body class="sapUiBody" width="100%" height="100%">
+		<div class="sapUiBody" id="ppmflowContent" style="height: 100%;">
+			<script>
+				ppmFlow.initialize("ppmflowContent")
+			
+				$.getJSON("../webapp/model/projectTest.json", function( data ) {
+					var array = [];
+					array.push(data);
+					ppmFlow.buildflow(array);
+				});
+				
+	   //         var oModel = new sap.ui.model.json.JSONModel("../webapp/model/simpleTest.json");
+		  //      oModel.attachRequestCompleted(function(oEvent){  
+				// 	var oModelUploaded = oEvent.getSource();
+				// 	var array = [];
+				// 	array.push(oModelUploaded);
+				// 	ppmFlow.buildflow(array)
+				// })
+			</script>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,109 @@
+{
+  "run": [
+    {
+      "filePath": "/interface/WebDynproTestProject.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "backendSystem": [],
+      "_metadata": {
+        "id": 5308051,
+        "runnerId": "qunitrunner",
+        "displayName": "WebDynproProject",
+        "lastRunTimeStamp": 1497317994505
+      }
+    },
+    {
+      "filePath": "/webapp/index.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "id": 8643970,
+        "runnerId": "webapprunner",
+        "displayName": "Run index.html",
+        "lastRunTimeStamp": 1496836901753
+      }
+    },
+    {
+      "filePath": "/interface/WebDynproTest.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "ui5ActiveVersion": "1.44.10",
+      "isDefaultVersion": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "backendSystem": [],
+      "_metadata": {
+        "id": 1745670,
+        "runnerId": "qunitrunner",
+        "displayName": "WebDynpro",
+        "lastRunTimeStamp": 1496730205759
+      }
+    },
+    {
+      "filePath": "/interface/WebDynproTest.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "id": 9925767,
+        "runnerId": "webapprunner",
+        "displayName": "Run WebDynproTest.html",
+        "lastRunTimeStamp": 1492506503745
+      }
+    },
+    {
+      "filePath": "/webapp/WebDynproTest.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "id": 7791676,
+        "runnerId": "webapprunner",
+        "displayName": "Run WebDynproTest.html 1",
+        "lastRunTimeStamp": 1491430271817
+      }
+    },
+    {
+      "filePath": "/webapp/Component.js",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "id": 6111025,
+        "runnerId": "fiorirunner",
+        "displayName": "Run Component.js",
+        "lastRunTimeStamp": 1492534483825
+      }
+    }
+  ]
+}
